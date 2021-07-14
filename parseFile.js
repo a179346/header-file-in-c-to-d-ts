@@ -74,7 +74,7 @@ function addLine (line) {
   console.log(current_indent + line);
 }
 
-const numType = [ 'int', 'short', 'long', 'double', 'float', 'uint8', 'int8', 'uint16', 'int16', 'int32', 'fp32', 'fp64' ];
+const numType = [ 'int', 'short', 'long', 'double', 'float', 'uint8', 'int8', 'uint16', 'int16', 'uint32', 'int32', 'fp32', 'fp64' ];
 const charType = [ 'char' ];
 
 function getType (lineSplit, isArray) {
