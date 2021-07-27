@@ -60,7 +60,8 @@ module.exports = function (path, indent) {
       for (const variable of variables) {
         if (!variable.type)
           addLine(variable.comment);
-        addLine(`${variable.name}: ${variable.type}; ${variable.comment}`);
+        else
+          addLine(`${variable.name}: ${variable.type}; ${variable.comment}`);
       }
       subIndent(indent);
       addLine('}');
